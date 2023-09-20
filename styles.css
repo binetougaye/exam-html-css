@@ -177,12 +177,19 @@ header {
     border-radius: 20px;
 }
 
+.content {
+    width: 80%;
+}
+
+.sidebar {
+    width: 20%;
+}
 
 
 .content .part1 {
     display: flex;
     gap: 30px;
-    /* width: 700px; */
+
 }
 
 .part1-text {
@@ -345,4 +352,37 @@ footer p {
     color: #fff;
 }
 
-/*  */
+/* responsive */
+@media screen and (max-width:1248px) {
+    .principale {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one h1,
+    p {
+        text-align: center;
+    }
+
+    .part1,
+    .part2,
+    .part3 {
+        flex-direction: column;
+    }
+
+    .pays {
+        text-align: left;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .one {
+        padding: 10px;
+    }
+
+
+}
